@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическая работа</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="section">
+            <h2>История браузера</h2>
+            <div class="buttons">
+                <button id="backBtn">Назад</button>
+                <button id="forwardBtn">Вперед</button>
+                <button id="page1Btn">туда</button>
+                <button id="page2Btn">сюда</button>
+            </div>
+            <div class="content" id="content"></div>
+        </section>
+
+        <section id="graphics-animation">
+            <h2>Графика и Анимация</h2>
+            <canvas id="animationCanvas" width="800" height="400"></canvas>
+            <div>
+                <label for="speed">Скорость:</label>
+                <input type="range" id="speed" min="1" max="10" step="1" value="5">
+            </div>
+        </section>
+
+        <section class="worker-section">
+            <h2>Вычисления с Web Worker</h2>
+            <div class="worker-input">
+                <input type="number" id="factorialInput" placeholder="Введите число">
+                <button id="calculate">Вычислить</button>
+            </div>
+            <div class="output" id="output"></div>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
